@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>The input form attribute</h1>
+<p>The form attribute specifies the form an input element belongs to.</p>
+<form action="../slot.html" id="form1" method="post">
+    <label for="fname">FirstName:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <input type="submit" value="SUBMIT" formenctype="multipart/form-data">
+</form>
+
+<p>The "Last Name" field below is outside the from element,but still part of the from.</p>
+<label for="lname">last name:</label><br>
+<input type="text" id="lname" name="lname" form="form1">
+
+</body>
+</html>

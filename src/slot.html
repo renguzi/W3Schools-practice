@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--引入Vue-->
+<script src="lib/vue.js"></script>
+
+<div id="app">
+    <todo>
+        <todo-title slot="todo-title" v-bind:title="title"></todo-title>
+        <todo-items slot="todo-items" v-for="item in todoItems" v-bind:item="item"></todo-items>
+    </todo>
+</div>
+
+<div></div>
+<script>
+<!--    插槽-->
+Vue.component("todo",{
+    template: '<div>  ' +
+                     '<slot name="todo-title"></slot> ' +
+                '<ul>' +
+                 ' <slot name="todo-items"></slot>' +
+                ' </ul>' +
+              '</div>'
+});
+
+Vue.component("todo-title",{
+    props:['title'],
+    template: '<div>{{title}}</div>'
+});
+
+Vue.component("todo-items",{
+    props: ['item'],
+    template:'<li>{{item}}</li>'
+});
+    let vm = new Vue({
+       el:"#app",
+       data:{
+           title:"学习列表",
+           todoItems:['java','front-end','linux']
+       }
+    });
+</script>
+</body>
+</html>
