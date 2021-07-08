@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p2>JavaScript <i>this</i> function</p2>
+<p id="demo"></p>
+<script>
+    "use strict";
+    function myFunction() {
+        return this;
+    }
+    document.getElementById('demo').innerHTML = myFunction();
+</script>
+
+</body>
+</html>

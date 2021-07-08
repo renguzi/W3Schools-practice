@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p2>JavaScript object</p2>
+<p id="demo"></p>
+<script>
+    const person={
+        firstName:"John",
+        lastName:"Doe",
+        age:50,
+        fullName:function test(){
+            return this.firstName + " " + this.lastName;
+        }
+    }
+    document.getElementById('demo').innerHTML = person.fullName();
+</script>
+
+</body>
+</html>

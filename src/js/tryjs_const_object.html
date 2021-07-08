@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JavaScript const.</h2>
+<p>Declaring a constant object does NOT make the object properties unchangeable: </p>
+<p id="demo"></p>
+
+<script>
+    const car={
+        type:'Fiat',
+        color:'White',
+        model:500
+    }
+    console.log('car:', car);
+    car.color='Red';
+    car.owner='John';
+    console.log('car modified:', car);
+    document.getElementById('demo').innerHTML="car owner:"+car.owner;
+
+</script>
+</body>
+</html>
