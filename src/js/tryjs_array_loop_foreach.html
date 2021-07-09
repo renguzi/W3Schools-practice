@@ -10,6 +10,7 @@
 <h2>JavaScript Arrays</h2>
 <p>Array.forEach() calls a function for each array element.</p>
 <p id="demo"></p>
+<p id="demo2"></p>
 <script>
     const fruits = ['apple', 'orange', 'grape', 'pear'];
     let text='<ul>';
@@ -17,6 +18,12 @@
     text+='</ul>';
     document.getElementById('demo').innerHTML = text;
 
+    const newArray = [myFunc(), fruits];
+    console.log(newArray.length);
+    newArray.push(myFunc(), 'hello');
+    console.log(newArray.length);
+
+    document.getElementById('demo2').innerHTML = newArray;
     function myFunc(value) {
 
         text+='<li>'+value+'</li>';
