@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/10 09:33   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JavaScript Array Methods:</h2>
+<h2>splice()</h2>
+<p>The splice() method adds new elements to the array</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<button onclick="myFunction()">Try it splice()</button>
+
+<script>
+
+    function myFunction() {
+        const fruits = ['orange', 'java', 'kiwi', 'linux', 'Vue'];
+        document.getElementById('demo1').innerHTML="The original fruits:"+fruits;
+        fruits.splice(2, 0, 'hellooooooooo');
+        document.getElementById('demo2').innerHTML = "After splice(),fruits:" + fruits;
+    }
+</script>
+
+</body>
+</html>
