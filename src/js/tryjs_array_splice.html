@@ -16,9 +16,9 @@
 
 <script>
 
+    const fruits = ['orange', 'java', 'kiwi', 'linux', 'Vue'];
+    document.getElementById('demo1').innerHTML="The original fruits:"+fruits;
     function myFunction() {
-        const fruits = ['orange', 'java', 'kiwi', 'linux', 'Vue'];
-        document.getElementById('demo1').innerHTML="The original fruits:"+fruits;
         fruits.splice(2, 0, 'hellooooooooo');
         document.getElementById('demo2').innerHTML = "After splice(),fruits:" + fruits;
     }
