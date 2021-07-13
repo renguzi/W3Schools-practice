@@ -11,11 +11,16 @@
 <p>Variables can be emptied if you set the value to <b>undefined</b></p>
 <p id="demo1"></p>
 <p id="demo2"></p>
+<p id="demo3"></p>
 <script>
-    let car = 'Volvo';
+    let car;
     document.getElementById('demo1').innerHTML="value: "+ car+"<br> data type: "+ typeof car;
+
+    car = 'Volvo';
+    document.getElementById('demo2').innerHTML="value: "+ car+"<br> data type: "+ typeof car;
+
     car=undefined;
-    document.getElementById('demo2').innerHTML="value:"+car+"<br> data type: "+ typeof car;
+    document.getElementById('demo3').innerHTML="value:"+car+"<br> data type: "+ typeof car;
 </script>
 
 </body>
