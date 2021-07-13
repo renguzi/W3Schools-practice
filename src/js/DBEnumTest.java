@@ -11,6 +11,8 @@ public class DBEnumTest {
         System.out.println(DBEnum.MSSQL.getDbName());
         DBEnum dbEnum = DBEnum.ORACLE;
         System.out.println(dbEnum);
+        DBEnum1 spring = DBEnum1.valueOf("DB2");
+        System.out.println(spring.getDbVendor());
     }
 
 }
