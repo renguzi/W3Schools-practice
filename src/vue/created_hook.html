@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/17 07:31   -->
+    <meta charset="UTF-8">
+    <title>Created hook</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<script>
+    let vm= new Vue({
+        data:{
+            a:'1'
+        },
+        created:function(){
+            console.log('a is:' + this.a);
+        }
+
+    })
+</script>
+
+</body>
+</html>
