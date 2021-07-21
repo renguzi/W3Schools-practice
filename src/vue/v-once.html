@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/21 16:18   -->
+    <meta charset="UTF-8">
+    <title>V-once</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="demo">
+
+<h2>Vue v-once directive</h2>
+<span>Message:{{message}}</span>
+<p v-once>This will never change:{{message}}</p>
+    <p>Using mustaches:{{rawHtml}}</p>
+    <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+
+</div>
+<script>
+    let vm=new Vue({
+        el:'#demo',
+        data:{
+            message:'hhhhhhhelo',
+            rawHtml:'<span style="color:red">this should be red.</span>'
+        }
+    })
+</script>
+
+</body>
+</html>
