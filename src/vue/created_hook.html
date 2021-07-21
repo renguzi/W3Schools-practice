@@ -8,13 +8,22 @@
     <script src="vue.js"></script>
 </head>
 <body>
+<div id="app">
+<!--    <sapn v-once>This will never change:{{msg}}-->
+
+<!--    </sapn>-->
+    <p>Message:{{msg}}</p>
+</div>
 
 <script>
     let vm= new Vue({
+        el:'#app',
         data:{
-            a:'1'
+            a:'1',
+            msg:'huangwei'
         },
         created:function(){
+            //`this` points to the vm instance
             console.log('a is:' + this.a);
         }
 
