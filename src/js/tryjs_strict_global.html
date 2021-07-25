@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/25 09:11   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Global "use strict" declaration</h2>
+<script>
+    "use strict";
+    myFunction();
+    function myFunction() {
+        //this will cause an error,y is not defined.
+        y = 3.14;
+    }
+</script>
+
+</body>
+</html>
