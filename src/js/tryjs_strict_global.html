@@ -9,11 +9,14 @@
 <body>
 <h2>Global "use strict" declaration</h2>
 <script>
+    x = 13.14;
     "use strict";
     myFunction();
     function myFunction() {
         //this will cause an error,y is not defined.
         y = 3.14;
+        console.log("x= " + x);
+        console.log("y= " + y);
     }
 </script>
 
