@@ -15,6 +15,11 @@
         '{"firstName":"Peter","lastName":"Jones"}]}';
     console.log(typeof text);
     const obj = JSON.parse(text);
+    console.log(typeof obj);
+    console.log(typeof obj.employees);
+    // console.log(isArray(obj.employees));
+    console.log(obj.employees.constructor.toString().indexOf("Array")>-1);
+    console.log(obj.employees.constructor === Array);
     document.getElementById('demo').innerHTML=obj.employees[1].firstName+" "+
             obj.employees[1].lastName;
 </script>
