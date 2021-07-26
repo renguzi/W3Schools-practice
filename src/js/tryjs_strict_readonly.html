@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/26 08:59   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>With "use strict":</h2>
+<h3>Writing to a read-only property is not allowed.</h3>
+<p id="demo"></p>
+<script>
+    "use strict";
+    const obj = {};
+    Object.defineProperty(obj,"x",{value:3, writable: false})
+    obj.x=444;
+
+    document.getElementById('demo').innerHTML = obj.x;
+
+</script>
+
+</body>
+</html>
