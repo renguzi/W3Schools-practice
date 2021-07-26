@@ -11,6 +11,7 @@
 <p>In this example,<b>this</b> represents the <b>person</b> object.</p>
 <p>Because the person object "owns" the fullName method.</p>
 <p id="demo"></p>
+<p id="demothis"></p>
 <script>
     const peson = {
         firstName:"John",
@@ -21,6 +22,9 @@
         }
     };
     document.getElementById('demo').innerHTML = peson.fullName();
+
+    let x = this;
+    document.getElementById('demothis').innerHTML = x;
 
 </script>
 
