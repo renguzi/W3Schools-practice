@@ -10,13 +10,17 @@
 <h2>With "use strict":</h2>
 <h3>Writing to a read-only property is not allowed.</h3>
 <p id="demo"></p>
+<button onclick="clickFunction()">click me change</button>
 <script>
     "use strict";
     const obj = {};
-    Object.defineProperty(obj,"x",{value:3, writable: false})
+    Object.defineProperty(obj,"x",{value:3, writable:false})
+    document.getElementById('demo').innerHTML = obj.x;
     obj.x=444;
 
-    document.getElementById('demo').innerHTML = obj.x;
+    function clickFunction() {
+        document.getElementById('demo').innerHTML = obj.x;
+    }
 
 </script>
 
