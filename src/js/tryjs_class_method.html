@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/26 14:58   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JavaScript Class Method</h2>
+<p>How to define and use a class method</p>
+<p id="demo"></p>
+<script>
+    class Car{
+        constructor(name,year) {
+            this.name = name;
+            this.year = year;
+        }
+        age(){
+            let age = new Date();
+            return age.getFullYear() - this.year;
+        }
+    }
+
+    const myCar = new Car('Ford', 2002);
+    document.getElementById('demo').innerHTML = "My car is: " + myCar.name + ": " + myCar.age();
+
+</script>
+
+</body>
+</html>
