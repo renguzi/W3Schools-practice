@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/7/26 09:10   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>The JavaScript <i>this</i> Keyword</h2>
+<p>In this example,<b>this</b> represents the <b>person</b> object.</p>
+<p>Because the person object "owns" the fullName method.</p>
+<p id="demo"></p>
+<script>
+    const peson = {
+        firstName:"John",
+        lastName:"Doe",
+        id:55666,
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    document.getElementById('demo').innerHTML = peson.fullName();
+
+</script>
+
+</body>
+</html>
