@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/9/24 11:12   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JavaScript Error</h2>
+<p>You cannot convert a number to UPPERCASE</p>
+<p id="demo"></p>
+<script>
+    let x = 13;
+    try{
+        x.toUpperCase();
+    }catch(e) {
+        document.getElementById("demo").innerHTML=e.name;
+    }
+</script>
+
+</body>
+</html>
