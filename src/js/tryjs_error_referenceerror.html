@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/9/24 11:03   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Javascript error</h2>
+<p>You cannot use the value of a non-existing variable:</p>
+<p id="demo"></p>
+
+<script>
+    let x = 4;
+    try{
+        x = y + 1;
+    }catch(e){
+        document.getElementById("demo").innerHTML=e.name;
+    }
+</script>
+</body>
+</html>
