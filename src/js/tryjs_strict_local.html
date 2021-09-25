@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/9/25 20:31   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>"use strict" in a function will only cause errors in that function</p>
+<p>Activate debugging in your browser(command+alt+I) to see the error report.</p>
+
+<script>
+    x = 3.14; //this will not cause an error.
+    myFunction();
+    function myFunction() {
+        "use strict";
+        y = 3.14;//this will cause an error(y is not defined)
+    }
+</script>
+
+</body>
+</html>
