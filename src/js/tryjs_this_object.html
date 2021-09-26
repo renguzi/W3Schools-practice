@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--@Author:asher
+    @Date:2021/9/26 22:25   -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>JavaScript <i>this</i> Keyword</h2>
+<p>In this example,<b>this</b> represents the person object that "owns" the myFunction method.</p>
+<p id="demo"></p>
+<script>
+    const person={
+        firstName:"Jone",
+        lastName:"Doe",
+        id:5543,
+        fullName:function () {
+            return this;
+        }
+    }
+    document.getElementById("demo").innerHTML=person.fullName();
+</script>
+
+</body>
+</html>
